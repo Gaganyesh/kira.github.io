@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background: #0d6efd;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    header h1 { margin: 0; }
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 { border-bottom: 2px solid #0d6efd; padding-bottom: 0.5rem; }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .card:hover { transform: scale(1.02); }
+    .card img { width: 100%; height: 180px; object-fit: cover; }
+    .card-content { padding: 1rem; }
+    .card-content h3 { margin-top: 0; }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #0d6efd;
+      color: #fff;
+      margin-top: 2rem;
+    }
+.projects-columns {
+  display: flex;
+  gap: 2rem;
+}
+
+.column {
+  flex: 1;
+}
+
+.column h3 {
+  margin-bottom: 1rem;
+  color: #0d6efd;
+}
+
+.card {
+  margin-bottom: 1.5rem;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Gagan Chowdary D, an engineering student passionate about CAD modeling and PCB design. I enjoy creating 3D models, designing electronics, and solving real-world problems through design and innovation.</p>
+    <p><a href="https://drive.google.com/file/d/1nx8-IWdFFXEslE7kdPCZjlgpE208uvzP/view?usp=drivesdk" target="_blank">Download My Resume</a></p>
+  </section>
+
+  <section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-columns">
+    
+    <!-- Left Column: CAD Models -->
+    <div class="column">
+      <h3>CAD Models</h3>
+      <div class="card">
+        <img src="wheel.jpg" alt="CAD Wheel Model" />
+        <div class="card-content">
+          <h4>Sample CAD Model Wheel</h4>
+          <p>Designed in Auto Fusion 360. Includes full assembly and exploded view renders.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Soccer Bot.png" alt="Soccer Bot CAD Model" />
+        <div class="card-content">
+          <h4>Sample CAD Model Soccer Bot</h4>
+          <p>Designed in Auto Fusion 360. Includes full assembly and exploded view renders.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Right Column: PCB Designs -->
+    <div class="column">
+      <h3>PCB Designs</h3>
+      <div class="card">
+        <img src="LFR.png" alt="Line Follower PCB" />
+        <div class="card-content">
+          <h4>Advanced Line Follower PCB</h4>
+          <p>Custom PCB design in Easyeda for LFR with ESP32, TB6612FNG, OLED.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Sample Sensor to FRC PCB.png" alt="Motor Driver PCB" />
+        <div class="card-content">
+          <h4>Sample Sensor to FRC PCB</h4>
+          <p>Custom PCB designed for connecting sensor to LFR PCB.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <section id="contact">
+    <h2>Contact</h2>
+    //<p>Email: <a href="mailto:your.email@example.com">gaganyesh0326pro@gmail.com</a></p>
+    <p>Email: <a href="gaganyesh0326pro@gmail.com">your.email@example.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/gagan-chowdary-d-6a530933b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin.com/in/yourprofile</a></p>
+    <p>GitHub: <a href="[GitHub-URL]" target="_blank">github.com/yourusername</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
